@@ -32,7 +32,9 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
 
+	public void example() {
 		// Get Translated Text
 		System.out.println(translator.getText("test"));
 	}

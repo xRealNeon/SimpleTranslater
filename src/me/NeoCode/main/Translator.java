@@ -26,13 +26,13 @@ public class Translator {
 	}
 
 	public ArrayList<String> getLangs() throws IOException {
-		return getUrl(url + "langs");
+		return getUrl(url + "/langs");
 	}
 
 	public void load() throws IOException {
 		Tstrings.clear();
 		String[] split;
-		for (String index : getUrl(url + "lang/" + lang.toLowerCase() + ".lang")) {
+		for (String index : getUrl(url + "/lang/" + lang.toLowerCase() + ".lang")) {
 			split = index.split("=");
 			Tstrings.add(new Tstring(split[0], split[1]));
 		}
