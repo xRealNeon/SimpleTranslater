@@ -9,8 +9,11 @@ public class Main {
 	static Translator translator;
 
 	public static void main(String[] args) {
+		// Init
 		translator = new Translator();
 		translator.setUrl("https://raw.githubusercontent.com/xRealNeon/SimpleTranslator/master/TestLangs/");
+
+		// Get Langs
 		System.out.println("Following Langs:");
 		try {
 			for (String lang : translator.getLangs()) {
@@ -19,12 +22,18 @@ public class Main {
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
+
+		// Set Lang
 		translator.setLang("en");
+
+		// Get Lang
 		try {
 			translator.load();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		// Get Translated Text
 		System.out.println(translator.getText("test"));
 	}
 

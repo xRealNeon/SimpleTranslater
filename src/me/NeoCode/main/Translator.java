@@ -62,7 +62,7 @@ public class Translator {
 		return list;
 	}
 
-	public class Tstring {
+	private class Tstring {
 
 		public Tstring(String adress, String text) {
 			this.text = text;
