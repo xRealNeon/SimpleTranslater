@@ -7,7 +7,7 @@ static Translator translator;
 	public static void main(String[] args) {
 		// Init
 		translator = new Translator();
-		translator.setUrl("https://raw.githubusercontent.com/xRealNeon/SimpleTranslator/master/TestLangs/");
+		translator.setUrl("your url");
 
 		// Get Langs
 		System.out.println("Following Langs:");
