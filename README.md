@@ -2,7 +2,7 @@
 [![GitHub release](https://img.shields.io/github/release/xRealNeon/SimpleTranslator.svg)](https://GitHub.com/xRealNeon/SimpleTranslator/releases/)
 
 ```Java
-static Translator translator;
+	static Translator translator;
 
 	public static void main(String[] args) {
 		// Init
