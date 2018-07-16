@@ -23,7 +23,7 @@ public class Translator {
 	public void load() throws IOException {
 		Tstrings.clear();
 		String[] split;
-		for (String index : getUrl(url + "langs/" + lang)) {
+		for (String index : getUrl(url + "langs/" + lang.toLowerCase() + ".lang")) {
 			split = index.split("=");
 			Tstrings.add(new Tstring(split[0], split[1]));
 		}
