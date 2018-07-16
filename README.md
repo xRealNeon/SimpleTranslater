@@ -29,9 +29,9 @@ static Translator translator;
 			e.printStackTrace();
 		}
 	}
-  
-  public void example() {
-    // Get Translated Text
+
+	public void example() {
+		// Get Translated Text
 		System.out.println(translator.getText("test"));
 	}
 ```
