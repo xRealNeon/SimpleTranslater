@@ -19,12 +19,13 @@ public class Main {
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-		translator.setLang("de");
+		translator.setLang("en");
 		try {
 			translator.load();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println(translator.getText("test"));
 	}
 
 }

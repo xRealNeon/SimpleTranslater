@@ -16,6 +16,15 @@ public class Translator {
 		Tstrings = new ArrayList<Tstring>();
 	}
 
+	public String getText(String adress) {
+		for (Tstring tstring : Tstrings) {
+			if (tstring.getAdress().equalsIgnoreCase(adress)) {
+				return tstring.getText();
+			}
+		}
+		return null;
+	}
+
 	public ArrayList<String> getLangs() throws IOException {
 		return getUrl(url + "langs");
 	}
@@ -23,7 +32,7 @@ public class Translator {
 	public void load() throws IOException {
 		Tstrings.clear();
 		String[] split;
-		for (String index : getUrl(url + "langs/" + lang.toLowerCase() + ".lang")) {
+		for (String index : getUrl(url + "lang/" + lang.toLowerCase() + ".lang")) {
 			split = index.split("=");
 			Tstrings.add(new Tstring(split[0], split[1]));
 		}
