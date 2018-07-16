@@ -34,6 +34,7 @@ public class Main {
 		}
 	}
 
+	// Called from somewehre
 	public void example() {
 		// Get Translated Text
 		System.out.println(translator.getText("test"));
