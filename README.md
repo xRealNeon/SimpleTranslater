@@ -33,6 +33,6 @@ public static void main(String[] args) {
 // Called from somewehre
 public void example() {
 	// Get Translated Text
-	System.out.println(translator.getText("your adress for example: login.failed"));
+	System.out.println(translator.getText("your adress, for example: login.failed"));
 }
 ```
